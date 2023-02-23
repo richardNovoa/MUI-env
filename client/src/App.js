@@ -1,17 +1,14 @@
-import React from 'react';
-import { BaseProvider, LightTheme } from 'baseui';
-import { Provider as StyletronProvider } from 'styletron-react';
-import { Client as Styletron } from 'styletron-engine-atomic';
-import Example from './Components/example';
+import * as React from 'react';
+import PodcastAppBar from './components/AppBar';
+import HomePage from './components/HomePage/HomePage';
 
-const engine = new Styletron();
-
-export default function App() {
+function App() {
 	return (
-		<StyletronProvider value={engine}>
-			<BaseProvider theme={LightTheme}>
-				<Example />
-			</BaseProvider>
-		</StyletronProvider>
+		<div>
+			<PodcastAppBar />
+			<HomePage />
+		</div>
 	);
 }
+
+export default App;
