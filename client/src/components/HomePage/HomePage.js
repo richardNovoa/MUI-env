@@ -31,6 +31,13 @@ const List1 = [
 		author: 'Jaime Crow',
 		cover:
 			'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhbPK4DCgcwmWF2Q8qB2Ny_7BzAN3mX6j5bSOrpBD-tjarrw'
+	},
+	{
+		id: 13,
+		title: 'BiggerPockets Real Estate...',
+		author: 'Bigger Pockets',
+		cover:
+			'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmPC8-p_jb1rgNrEhtb9PjC24ykeJjpbShmyOOo0kOItyukB0'
 	}
 ];
 const List2 = [
@@ -61,6 +68,13 @@ const List2 = [
 		author: 'NBC News',
 		cover:
 			'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ36WL9MOyebS0jX3DVPcib5FBanzh2LMhOisp4KC79gnlVlE'
+	},
+	{
+		id: 14,
+		title: 'Stuff You Should know',
+		author: 'iHeartPodcasts',
+		cover:
+			'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2-ExvXI7GHzDWuqcbn1jh40HX_oR2rlLb3oYEgq73bjrPILg'
 	}
 ];
 const List3 = [
@@ -91,6 +105,37 @@ const List3 = [
 		author: 'Jason Bateman ...',
 		cover:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0dTkvZZiI5tRYh-41OYHXlL8fqoaGtkAs_uWZonyqcTahHnU'
+	},
+	{
+		id: 15,
+		title: 'Stuff You Should Know',
+		author: 'iHeart Podcasts',
+		cover:
+			'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2-ExvXI7GHzDWuqcbn1jh40HX_oR2rlLb3oYEgq73bjrPILg'
+	}
+];
+const CardList = [
+	{
+		id: 21,
+		cover:
+			'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2-ExvXI7GHzDWuqcbn1jh40HX_oR2rlLb3oYEgq73bjrPILg',
+		podcast: 'Stuff You Should Know',
+		author: 'iHeartPodcasts',
+		title: 'The Mystery of the Lost Amber R...',
+		description:
+			'Chuck and Josh turn into the Hardy Boys for one of the great unsolved mysteries of WWII, a work of ...',
+		time: 47
+	},
+	{
+		id: 22,
+		cover:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZt805JMihjChbsRmtabBwt86kFvGcdEdzg2Fg-rP_hPUo6We',
+		podcast: 'The Daily',
+		author: 'The New York Times',
+		title: 'The Veterans Fighting to Legalize...',
+		description:
+			'In a major shift that would modify laws set half a decade ago, states and cities around the United S...',
+		time: 28
 	}
 ];
 
@@ -98,7 +143,7 @@ function HomePage() {
 	return (
 		<Box sx={{ ml: 2, mt: 2 }}>
 			<SectionTileCarousel section='Your Subscriptions' data={List1} />
-			<SectionCardCarousel />
+			<SectionCardCarousel section='Popular & Trending' data={CardList} />
 			<SectionTileCarousel section='Popular & Trending' data={List2} />
 			<SectionTileCarousel
 				section='Top podcasts in Society & Culture'
