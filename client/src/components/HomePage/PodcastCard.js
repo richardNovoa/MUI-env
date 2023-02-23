@@ -18,7 +18,9 @@ const PodcastCard = ({ cover, podcast, author, description, time }) => {
 		<Box mr={1}>
 			<Card sx={{ width: 275 }}>
 				<CardHeader
-					avatar={<img src={cover} width='40' height='40'></img>}
+					avatar={
+						<img src={cover} width='40' height='40' alt='podcast cover'></img>
+					}
 					title={podcast}
 					subheader={author}
 				/>
@@ -41,7 +43,6 @@ const PodcastCard = ({ cover, podcast, author, description, time }) => {
 };
 
 PodcastCard.propTypes = {
-	id: PropTypes.string.isRequired,
 	cover: PropTypes.string.isRequired,
 	podcast: PropTypes.string.isRequired,
 	author: PropTypes.string.isRequired,

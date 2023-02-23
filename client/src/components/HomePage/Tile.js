@@ -6,7 +6,7 @@ const Tile = ({ title, author, cover }) => {
 	return (
 		<Box mr={2} sx={{ width: 96 }}>
 			<div className='tile'>
-				<img src={cover} width='96' height='96' />
+				<img src={cover} width='96' height='96' alt='podcast cover' />
 				<Typography variant='body2'>{title}</Typography>
 				<Typography variant='caption'>{author}</Typography>
 			</div>

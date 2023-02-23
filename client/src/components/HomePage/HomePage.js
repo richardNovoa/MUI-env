@@ -1,6 +1,5 @@
 import React from 'react';
-import SectionCardCarousel from './SectionCardCarousel';
-import SectionTileCarousel from './SectionTileCarousel';
+import ScrollableCarousel from './ScrollableCarousel';
 import { Box } from '@mui/material';
 
 const List1 = [
@@ -142,11 +141,25 @@ const CardList = [
 function HomePage() {
 	return (
 		<Box sx={{ ml: 2, mt: 2 }}>
-			<SectionTileCarousel section='Your Subscriptions' data={List1} />
-			<SectionCardCarousel section='Popular & Trending' data={CardList} />
-			<SectionTileCarousel section='Popular & Trending' data={List2} />
-			<SectionTileCarousel
+			<ScrollableCarousel
+				section='Your Subscriptions'
+				type='tile'
+				data={List1}
+			/>
+			<ScrollableCarousel
+				section='Popular & Trending'
+				type='card'
+				data={CardList}
+			/>
+			<ScrollableCarousel
+				section='Popular & Trending'
+				type='tile'
+				data={List2}
+			/>
+
+			<ScrollableCarousel
 				section='Top podcasts in Society & Culture'
+				type='tile'
 				data={List3}
 			/>
 		</Box>
