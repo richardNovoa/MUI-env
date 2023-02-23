@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import PodcastCard from './PodcastCard';
+import PodcastCard from './Card';
 import Tile from './Tile';
 
 const ScrollableCarousel = ({ section, type, data }) => {
@@ -22,12 +22,12 @@ const ScrollableCarousel = ({ section, type, data }) => {
 						/>
 					))}
 				{type === 'tile' &&
-					data.map((item) => (
+					data.map((tile) => (
 						<Tile
-							key={item.id}
-							title={item.title}
-							cover={item.cover}
-							author={item.author}
+							key={tile.id}
+							title={tile.title}
+							cover={tile.cover}
+							author={tile.author}
 						/>
 					))}
 			</Box>
