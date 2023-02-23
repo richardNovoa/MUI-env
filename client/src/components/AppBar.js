@@ -36,8 +36,8 @@ const PodcastAppBar = () => {
 					</IconButton>
 					<Avatar
 						size='large'
-						alt='Cindy Baker'
-						src='/static/images/avatar/3.jpg'
+						alt='Richard Novoa'
+						src='https://en.gravatar.com/userimage/185977904/465df6c6090fb26376ef476519984665.jpg'
 					/>
 				</Toolbar>
 			</AppBar>
