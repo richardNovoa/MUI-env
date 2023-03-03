@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollableCarousel from './ScrollableCarousel';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { List1, List2, List3, CardList } from '../../data/podcasts';
 
 function HomePage() {

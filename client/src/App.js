@@ -4,10 +4,11 @@ import HomePage from './components/HomePage/HomePage';
 
 function App() {
 	return (
-		<div>
+		<>
 			<PodcastAppBar />
 			<HomePage />
-		</div>
+			<div>This is a little div for you</div>
+		</>
 	);
 }
 
